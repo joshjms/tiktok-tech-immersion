@@ -1,5 +1,24 @@
-# assignment_demo_2023
+# Tiktok Tech Immersion 2023
 
-![Tests](https://github.com/TikTokTechImmersion/assignment_demo_2023/actions/workflows/test.yml/badge.svg)
+### Overview
+Implementing HTTP and RPC servers using Kitex (Golang). The assignment requires two endpoints `/send` and `/pull`. 
 
-This is a demo and template for backend assignment of 2023 TikTok Tech Immersion.
+- `send/` - POST request with the following payload:
+```json
+{
+    "chat": "str",
+    "text": "str",
+    "sender": "str"
+}
+```
+
+- `pull/` - GET request with the following parameters:
+```json
+{
+    "chat": "str",
+    "cursor": "int64",
+    "limit": "int32",
+    "reverse": "boolean"
+}
+```
+
