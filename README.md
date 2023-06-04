@@ -3,7 +3,7 @@
 ### Overview
 Implementing HTTP and RPC servers using Kitex (Golang). The assignment requires two endpoints `/send` and `/pull`. 
 
-- `send/` - POST request with the following payload:
+- `api/send/` - POST request with the following payload:
 ```json
 {
     "chat": "str",
@@ -12,7 +12,7 @@ Implementing HTTP and RPC servers using Kitex (Golang). The assignment requires 
 }
 ```
 
-- `pull/` - GET request with the following parameters:
+- `api/pull/` - GET request with the following parameters:
 ```json
 {
     "chat": "str",
@@ -22,3 +22,18 @@ Implementing HTTP and RPC servers using Kitex (Golang). The assignment requires 
 }
 ```
 
+### Initializing
+
+#### 1. Clone Repository
+```shell
+git clone https://github.com/joshjms/tiktok-tech-immersion.git
+```
+
+#### 2. Run docker-compose
+```shell
+cd tiktok-tech-immersion
+docker-compose up --build
+```
+
+#### 3. Test Endpoint
+You can test the endpoint at port `8080`. 
